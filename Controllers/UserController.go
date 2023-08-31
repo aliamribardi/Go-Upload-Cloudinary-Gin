@@ -20,6 +20,7 @@ func UserIndex(c *gin.Context) {
 
 func UserUpload(c *gin.Context) {
 	var user Models.User
+	
 	godotenv.Load()
 
 	urlCloudinary := os.Getenv("CLOUDINARY_URL")
